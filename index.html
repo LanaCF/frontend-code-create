@@ -19,12 +19,12 @@
 
     <div class="navigation">
       <div class="navigation__box">
-        <p class="title">
+        <p class="title" id="red">
           Виберіть необхідний тег
         </p>
         <form class="form-tag" name="formTag">
           <select name="tag">
-            <option value="start" selected disabled hidden></option>
+            <option value="start" class="start"></option>
             <option value="div">div</option>
             <option value="h1">h1</option>
             <option value="h2">h2</option>
@@ -56,15 +56,18 @@
 
           <textarea name="addText" id="" cols="30" rows="3" placeholder="Введіть текст"></textarea>
           <button type="button" name="addTextBtn">Додати</button>
-          
+          <p class="note">
+            Неможливо ввести текст в непарний тег.
+          </p>
+
           <input type="text" name="addClass" placeholder="Введіть назву класу">
           <button type="button" name="addClassBtn">Додати</button>
           
           <input type="url" class="add-link" name="addLink" placeholder="Введіть посилання на контент (href)">
           <button type="button" name="addLinkBtn">Додати</button>
-          <p class="error-link" name="errorLink">
+          <!-- <p class="error-link" name="errorLink">
             Лише для тегу 'a'!
-          </p>
+          </p> -->
 
           <input type="url" name="addSrc" placeholder="Введіть посилання на зображення (src)">
           <button type="button" name="addSrcBtn">Додати</button>
